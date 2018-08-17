@@ -5,8 +5,29 @@
 body {
     margin: 0;
     padding: 0;
+  background-color: orange;
 }
-
+section#key{
+  margin: 0 auto;
+}
+section#otherKeys{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.keyInfo{
+  margin: 0 auto;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  background-color: lightpink;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  border: 1px solid deeppink;
+}
 section#score {
   width: 100%;
 }
@@ -41,14 +62,15 @@ section#score div {
 
 
 .furry {
-  background-image: url('../images/furry.png');
+  background-image: url('../images/mrm.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .coin {
-  background-image: url('../images/coin.png');
+  background-image: url('../images/box.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
 }
 
 section#over {
@@ -62,13 +84,18 @@ section#over {
   background-color: rgba(255, 255, 0, 0.75);
 }
 
-section#over pre {
-  display: inline-block;
-  width: 100%;
+section#over #finalScore {
+  width: 300px;
+  height: 300px;
   text-align: center;
-  font-size: 10px;
+  font-size: 60px;
   font-weight: bolder;
-  color: brown;
+  border: 2px solid red;
+  margin: 0 auto;
+  padding: 0.5em;
+  background-color: rgba(211,211,211, 0.75);
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px 1px lightgray;
 }
 
 .invisible {
