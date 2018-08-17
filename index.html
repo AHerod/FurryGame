@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Javascript Furry game</title>
     <link rel='stylesheet' href='css/style.css'>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
 </head>
 
@@ -16,15 +17,7 @@
       <strong>0</strong>
     </div>
   </section>
-<section id = "keyUp">
-  <div id = "upArrow" class="keyInfo">Up
-  </div>
-</section>
-  <section id = otherKeys>
-    <div id = "leftArrow" class="keyInfo"> Left</div>
-    <div id = "downArrow" class="keyInfo"> Down</div>
-    <div id = "rightArrow" class="keyInfo"> Right</div>
-  </section>
+
 
 
   <section id='board'>
@@ -129,10 +122,24 @@
     <div></div>
     <div></div>
   </section>
+  <section id = "keyUp">
+    <div id = "upArrow" class="keyInfo">Up
+    </div>
+  </section>
+  <section id = otherKeys>
+    <div id = "leftArrow" class="keyInfo"> Left</div>
+    <div id = "downArrow" class="keyInfo"> Down</div>
+    <div id = "rightArrow" class="keyInfo"> Right</div>
+  </section>
 
 
   <section id='over' class='invisible'>
-      <div id="finalScore"></div>
+<div class="gameOver">
+  <div id="finalScore">
+  </div>
+  <button type="submit" value="Submit" id="playAgain" onClick="window.location.reload()">Play Again</button>
+</div>
+
   </section>
 
   <script src='out.js'></script>

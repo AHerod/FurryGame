@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;;
+
 }
 
 body {
     margin: 0;
     padding: 0;
-  background-color: orange;
+    background-color: orange;
 }
 section#key{
   margin: 0 auto;
@@ -21,39 +23,41 @@ section#otherKeys{
   width: 100px;
   height: 60px;
   line-height: 60px;
-  background-color: lightpink;
+  background-color: #FF822E;
   font-size: 15px;
   font-weight: bold;
   color: #000;
   text-align: center;
-  border: 1px solid deeppink;
+  border: 1px solid #FA5B0F;
 }
 section#score {
   width: 100%;
 }
 
 #board {
-  width: 640px;
-  height: 640px;
+  width: 660px;
+  height: 660px;
   margin: 1em auto;
+  border: 10px solid #028ECE;
 }
 
 #board  > div {    
-  border: 1px solid black;
+  border: 1px solid #028ECE;
   float: left;
   width: 64px;
   height: 64px;
+  background-color: #bdc7cc;
 }
 
 
 section#score div {
-  width: 10em;
-  height: 3em;
+  width: 15em;
+  line-height: 2em;
+  height: 5em;
   text-align: center;
   padding: 0.5em;
   background-color: rgba(211,211,211, 0.75);
-  border: 1px solid lightgray;
-  border-radius: 1px;
+  border-radius: 2px;
   box-shadow: 1px 1px 5px 1px lightgray;
   margin: 1em auto;
 }
@@ -81,23 +85,35 @@ section#over {
   top: 0;
   z-index: 1;
   padding: 10px;
-  background-color: rgba(255, 255, 0, 0.75);
+  background-color: rgba(11, 145, 206, 0.75);
 }
 
 section#over #finalScore {
-  width: 300px;
-  height: 300px;
+
+}
+.gameOver{
+  font-family: 'Press Start 2P', cursive;;
+  height: 440px;
+  width: 100%;
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
+  line-height: 70px;
   font-weight: bolder;
-  border: 2px solid red;
-  margin: 0 auto;
+  border: 20px solid orange;
   padding: 0.5em;
   background-color: rgba(211,211,211, 0.75);
   border-radius: 1px;
-  box-shadow: 1px 1px 5px 1px lightgray;
+  top:300px;
 }
 
 .invisible {
   display: none;
+}
+
+#playAgain{
+  font-size: 24px;
+  font-weight: bolder;
+  height: 80px;
+  width: 200px;
+  background-color: orange;
 }

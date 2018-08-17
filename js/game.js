@@ -1,15 +1,5 @@
-console.log("Hello, Furry!");
-//Furry constructor
-var Furry = function(x, y, direction){
-  this.x = 0;
-  this.y = 0;
-  this.direction = "right";  //left, right, up, down
-};
-//Coin constructor
-var Coin = function(x, y) {
-  this.x = Math.floor(Math.random() * 10);
-  this.y = Math.floor(Math.random() * 10);
-};
+var Coin = require('./coin.js');
+var Furry = require('./furry.js');
 //Game constructor
 var Game = function() {
 
@@ -25,7 +15,7 @@ var Game = function() {
   };
 
   this.index = function(x,y) {
-   return x + (y * 10);
+    return x + (y * 10);
   };
 
   //method to display furry on the board
@@ -96,7 +86,7 @@ var Game = function() {
       this.coin = new Coin();
       this.showCoin();
     }
-  }
+  };
   this.gameOver = function () {
     if (this.furry.x < 0|| this.furry.y < 0 || this.furry.x > 9|| this.furry.y > 9) {
       clearInterval(this.idSetInterval);
@@ -109,8 +99,4 @@ var Game = function() {
     }
   }
 };
-
-var game = new Game();
-game.startGame();
-game.showFurry();
-game.showCoin();
+module.exports = Game;
