@@ -66,9 +66,9 @@ section#score div {
 
 
 .furry {
-  background-image: url('../images/mrm.png');
+  background-image: url('../images/rick.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 }
 .coin {
   background-image: url('../images/box.png');

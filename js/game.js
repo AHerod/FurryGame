@@ -8,16 +8,10 @@ var Game = function() {
   this.coin = new Coin();
   this.score = 0;
   var self = this;
-  this.startGame = function () {
-    this.idSetInterval = setInterval(function () {
-      game.moveFurry();
-    }, 250);
-  };
 
   this.index = function(x,y) {
     return x + (y * 10);
   };
-
   //method to display furry on the board
   this.showFurry = function() {
     this.board[ this.index(this.furry.x,this.furry.y) ].classList.add('furry');
@@ -27,8 +21,6 @@ var Game = function() {
 
     this.board[ this.index(this.coin.x,this.coin.y) ].classList.add('coin');
   };
-
-
   this.moveFurry = function () {
     this.hideVisibleFurry();
     if(this.furry.direction === "right"){
@@ -48,7 +40,6 @@ var Game = function() {
     this.showFurry();
     this.checkCoinCollision();
   };
-
   this.hideVisibleFurry = function (event) {
     document.querySelector(".furry").classList.remove("furry");
   };
@@ -75,9 +66,6 @@ var Game = function() {
 
     }
   };
-  document.addEventListener('keydown', function(event){
-    self.directFurry(event);
-  });
   this.checkCoinCollision = function () {
     if(this.furry.x === this.coin.x && this.furry.y === this.coin.y){
       document.querySelector(".coin").classList.remove("coin");
@@ -97,6 +85,11 @@ var Game = function() {
       this.hideVisibleFurry();
 
     }
-  }
+  };
+  this.startGame = function () {
+    this.idSetInterval = setInterval(function () {
+      self.moveFurry();
+    }, 250);
+  };
 };
 module.exports = Game;
