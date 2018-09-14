@@ -1,3 +1,5 @@
+Play this game: http://bradfrost.com/blog/post/this-is-the-web/
+
 ## About
 Furry Game is a casual 2D platformer.
 Your aim is to collect as many boxes as you can. 
