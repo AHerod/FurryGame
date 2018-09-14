@@ -1,4 +1,4 @@
-Play this game: http://bradfrost.com/blog/post/this-is-the-web/
+Play this game: https://aherod.github.io/FurryGame/
 
 ## About
 Furry Game is a casual 2D platformer.
