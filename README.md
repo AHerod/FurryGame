@@ -13,6 +13,3 @@ Don't try to leave the board! :skull:	:heavy_exclamation_mark:
 - Vanilla JS 
 - HTML5
 - CSS3
-## Preview
-
-![Alt Text](https://media.giphy.com/media/9PvpECRqROigfgeTWh/giphy.gif)
